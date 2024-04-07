@@ -43,12 +43,11 @@ public class RequestBodyStringController {
     }
 
     @PostMapping("/request-body-string-v3")
-    public HttpEntity<String> requestBodyStringV3(RequestEntity<String> httpEntity) throws IOException {
+    public ResponseEntity<String> requestBodyStringV3(RequestEntity<String> httpEntity) throws IOException {
 
         String messageBody = httpEntity.getBody();
         log.info("messageBody = {}", messageBody);
-        return new HttpEntity<>("ok");
-
+        return new ResponseEntity<>("ok", HttpStatus.OK);
     }
 
     @ResponseBody
