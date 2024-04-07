@@ -1,5 +1,6 @@
 package hello.springmvc.basic.request;
 
+import hello.springmvc.basic.HelloData;
 import jakarta.servlet.ServletInputStream;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -57,6 +58,8 @@ public class RequestBodyStringController {
         log.info("messageBody = {}", messageBody);
         return "ok";
     }
+
+
 
 
 }
