@@ -34,7 +34,7 @@ public class RequestBodyJsonController {
         response.getWriter().write("ok");
 
     }
-
+    /* edit */
     @ResponseBody
     @PostMapping("/request-body-json-v2")
     public String requestBodyJsonV2(@RequestBody String messageBody) throws IOException {
